@@ -510,6 +510,9 @@ body {
 		justify-self: center;
 		align-self: center;
 	}
+	.second-section__car {
+		margin-top: -370px;
+	}
 }
 
 @media all and (max-width: 340px) {
