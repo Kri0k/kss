@@ -149,7 +149,7 @@ body {
 	.side-menu { width: 80px; padding-left: 1px; }
 	.side-menu__logo { width: 70px; height: 70px; margin-left: -50px; }
 	.menu-tg_image { width: 60px; height: 60px; margin-left: 0; }
-	.menu-contacts { height: 100px; margin-left: -50px; }
+	.menu-contacts { height: 250px; margin-left: -50px; }
 	.side-menu__list { transform: scale(0.4); margin-left: -45px; }
 }
 
@@ -1329,7 +1329,7 @@ body {
 		margin-left: 0;
 		padding-left: 0;
 		margin-top: 40px;
-		margin-bottom: 50px;
+		margin-bottom: 200px;
 		padding-left: 80px;
 		width: calc(100vw - 80px);
 		grid-template-areas:
