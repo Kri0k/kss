@@ -1,11 +1,13 @@
-html { scroll-behavior: smooth; }
+html { scroll-behavior: smooth; height: 100%; }
 body {
 	margin: 0 0 0 0;
 	overflow-x: hidden;
 	background-color: #282828;
+	width: 100%;
+	min-width: 100%;
+	max-width: 100%;
 	display: flex;
 	flex-direction: column;
-	justify-items: stretch;
 }
 @font-face {
   font-family: 'Scada';
@@ -71,7 +73,7 @@ body {
 .side-menu {
 	background-color: #191919;
 	z-index: 9999;
-	max-height: 100vh;
+	min-height: 100vh;
 	height: 100%;
 	width: 180px;
 	position: fixed;
@@ -145,13 +147,6 @@ body {
 }
 
 @media all and (max-width: 510px) {
-	.side-menu { width: 110px; padding-left: 1px; }
-	.side-menu__logo { width: 90px; height: 90px; margin-left: -32px; }
-	.menu-tg_image { width: 80px; height: 80px; margin-left: -32px; }
-	.side-menu__list { transform: scale(0.6); margin-left: -30px; }
-}
-
-@media all and (max-width: 400px) {
 	.side-menu { width: 110px; padding-left: 1px; }
 	.side-menu__logo { width: 90px; height: 90px; margin-left: -32px; }
 	.menu-tg_image { width: 80px; height: 80px; margin-left: -32px; }
@@ -233,7 +228,6 @@ body {
 
 @media all and (max-width: 510px) {
 	.hat {
-		margin-left: -30px;
 		grid-template-areas: 
 		   "hat-window-anim"
 		   "hat-text-anim";
@@ -241,13 +235,16 @@ body {
 		transform: scale(0.6);
 		padding-left: 0;
 		height: 700px;
+		max-width: 100vw;
+		width: 100vw;
+		align-self: stretch;
 	}
 	.hat-window { overflow-y: visible; margin-top: -310px; }
 }
 
 /*-------------------------------------------*/
 
-.description { width: 100%; }
+.description { width: 100%; min-width: 100%; max-width: 100%; }
 
 .description__first-section {
 	width: 100%;
@@ -373,8 +370,10 @@ body {
 }
 
 @media all and (max-width: 510px) {
+	/*.description { align-self: stretch; }*/
 	.description__first-section {
-		width: 400px;
+		min-width: 100vw;
+		width: 100vw;
 		height: 620px;
 		margin-left: 110px;
 		grid-template-areas: 
@@ -382,7 +381,7 @@ body {
 			"fs_text"
 			"fs-animation";
 		grid-template-rows: 150px 200px 250px;
-		grid-template-columns: 400px;
+		grid-template-columns: 100%;
 	}
 	.first-section__title {
 		content: url("img/fs_title_mb.png");
@@ -639,7 +638,7 @@ body {
 }
 
 @media all and (max-width: 510px) {
-	.gallery { transform: scale(0.4); margin-left: -51px; margin-top: -1900px; margin-bottom: -2100px; }
+	.gallery { transform: scale(0.4); margin-left: -40px; margin-top: -1900px; margin-bottom: -2100px; align-self: stretch; max-width: 	800px; }
 }
 /*-------------------------------------------*/
 
