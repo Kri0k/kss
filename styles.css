@@ -369,11 +369,12 @@ body {
 			"fs_title"
 			"fs_text"
 			"fs-animation";
-		grid-template-rows: 150px 200px 250px;
+		grid-template-rows: 150px 150px 250px;
 		grid-template-columns: calc(100vw - 80px);
 	}
 	.first-section__title {
 		content: url("img/fs_title_mb.png");
+		width: auto;
 		justify-self: center;
 		align-self: center;
 		margin-left: 0;
@@ -470,10 +471,11 @@ body {
 			"ss_title"
 			"ss_text"
 			"ss_animation";
-		grid-template-rows: 150px 250px 250px;
+		grid-template-rows: 150px 150px 350px;
 		grid-template-columns:calc(100vw - 80px);
 	}
 	.second-section__title {
+		width: auto;
 		content: url("img/ss_title_mb.png");
 		justify-self: center;
 		align-self: center;
@@ -589,17 +591,18 @@ body {
 @media all and (max-width: 510px) {
 	.description__third-section {
 		width: calc(100vw - 80px);
-		height: 610px;
+		height: 650px;
 		margin-left: 0px;
 		padding-left: 80px;
 		grid-template-areas: 
 			"ts_title"
 			"ts_text"
 			"ts_animation";
-		grid-template-rows: 150px 200px 250px;
+		grid-template-rows: 150px 150px 400px;
 		grid-template-columns: calc(100vw - 80px);
 	}
 	.third-section__title {
+		width: auto;
 		content: url("img/ts_title_mb.png");
 		justify-self: center;
 		align-self: center;
@@ -1150,7 +1153,9 @@ body {
 		grid-template-columns: calc(100vw - 80px);
 	}
 	.gallery-title { justify-self: center; transform: scale(0.3); margin-bottom: -100; margin-top: 0; align-self: center; }
-
+	.gallery-carousel, .gallery-cards, .gallery-banners, .gallery-banner, .gallery-buttons, .gallery-slider {
+		transform: scale(1.0); width: auto;
+	}
 	.gallery-carousel {
 		grid-template-areas:
 			"carousel carousel"
@@ -1170,7 +1175,7 @@ body {
 		height: 140px;
 		justify-self: start;
 	}
-	.carousel-box { transform: scale(0.35); }
+	.carousel-box { transform: scale(0.3); }
 
 
 	.gallery-cards {
@@ -1183,7 +1188,7 @@ body {
 		 margin-bottom: 10;
 	}
 	.cards-box__card { justify-self: center; }
-	.cards-box { transform: scale(0.4); justify-self: center; align-self: center; }
+	.cards-box { transform: scale(0.3); justify-self: center; align-self: center; }
 	.cards_arrow-left {
 		width: calc((100vw - 80px) / 2 - 100px);
 		height: 140px;
@@ -1207,7 +1212,7 @@ body {
 		height: 400px;
 	}
 	.banners-box-images { width: 324px; height: 216px; grid-template-rows: 108px 108px; grid-template-columns: 108px 108px 108px; }
-	.banners-box { transform: scale(0.4); z-index: 2; }
+	.banners-box { transform: scale(0.3); z-index: 2; }
 	.banners_arrow-left {
 		width: calc((100vw - 80px) / 2 + 100px);
 		height: 140px;
@@ -1230,7 +1235,7 @@ body {
 		grid-template-rows: 200px 200px;
 		margin-bottom: 10;
 	}
-	.banner-box { transform: scale(0.4); }
+	.banner-box { transform: scale(0.3); }
 	.banner-arrow-left {
 		width: calc((100vw - 80px) / 2 - 100px);
 		height: 140px;
@@ -1252,7 +1257,7 @@ body {
 		grid-template-rows: 200px 200px;
 		margin-bottom: 0px;
 	}
-	.buttons-box { transform: scale(0.4); width: 700px; }
+	.buttons-box { transform: scale(0.3); width: 700px; }
 	.buttons-arrow-left {
 		width: calc((100vw - 80px) / 2 + 100px);
 		height: 140px;
@@ -1274,7 +1279,7 @@ body {
 		grid-template-rows: 220px 200px;
 		margin-bottom: 0px;
 	}
-	.slider-box { justify-self: center; transform: scale(0.4); margin-top: -40px; }
+	.slider-box { justify-self: center; transform: scale(0.3); margin-top: -40px; }
 	.slider-box__inner { margin-top: 10px; height: 0px; }
 	.slider-arrow-left {
 		width: calc((100vw - 80px) / 2 - 100px);
@@ -1336,7 +1341,7 @@ body {
 		margin-left: 0;
 		padding-left: 0;
 		margin-top: 40px;
-		margin-bottom: 200px;
+		margin-bottom: 180px;
 		padding-left: 80px;
 		width: calc(100vw - 80px);
 		grid-template-areas:
@@ -1347,8 +1352,8 @@ body {
 		grid-template-rows: 180px 150px 90px;
 	}
 	.footer-title { content: url("img/footer-title_mb.png"); width: 100%; }
-	.footer-contacts_text { transform: scale(0.4); width: 180vw; justify-self: center; }
-	.footer-contacts_arrow { transform: scale(0.4);}
+	.footer-contacts_text { transform: scale(0.4); width: 180vw; justify-self: center; font-size: 60px; }
+	.footer-contacts_arrow { transform: scale(0.4); width: auto;}
 }
 
 /*-------------------------------------------*/
